@@ -28,3 +28,10 @@ class LeNet(nn.Module):
         x = torch.flatten(x, 1)
         x = self.classifier(x)
         return x
+
+trial_model = LeNet() 
+
+#total parameters: 
+#trial_model.parameters() --> iterator to go over all the model's parameter
+total_params = sum(p.numel() for p in trial_model.parameters())
+print("Total number of parameters:", total_params)

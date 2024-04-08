@@ -2,7 +2,7 @@ BASE: ['resnet18_base.yaml']
 DATA:
   BATCH_SIZE: 32
   DATASET: "medium_imagenet"
-  IMG_SIZE: 32
+  IMG_SIZE: 32re
   NUM_WORKERS: 32
   PIN_MEMORY: True
 MODEL:
