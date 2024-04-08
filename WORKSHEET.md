@@ -2,13 +2,13 @@
 
 ---
 
-This is the worksheet for Homework 1. Your deliverables for this homework are:
+This is the worksheet for Homework 1. Your deliverables for this homework are:re 
 
 - [ ] This worksheet with all answers filled in. If you include plots/images, be sure to include all the required files. Alternatively, you can export it as a PDF and it will be self-sufficient.
 - [ ] Kaggle submission and writeup (details below)
 - [ ] Github repo with all of your code! You need to either fork it or just copy the code over to your repo. A simple way of doing this is provided below. Include the link to your repo below. If you would like to make the repo private, please dm us and we'll send you the GitHub usernames to add as collaborators.
 
-`YOUR GITHUB REPO HERE (or notice that you DMed us to share a private repo)`
+`YOUR GITHUB REPO HERE: https://github.com/londhet/NMEP_HW1.git`
 
 ## To move to your own repo:
 
@@ -17,7 +17,7 @@ First follow `README.md` to clone the code. Additionally, create an empty repo o
 ```bash
 $ git remote rename origin staff # staff is now the provided repo
 $ git remote add origin <your repos remote url>
-$ git push -u origin main
+$ git push -u origin main 
 ```
 
 
@@ -46,26 +46,25 @@ Read through `README.md` and follow the steps to understand how the repo is stru
 
 ## 0.0 What are the `build.py` files? Why do we have them?**
 
-`YOUR ANSWER HERE`
+`The build.py files are used in codebases to build models and data loaders using the config. The build.py files contain all the paramerters and then they call the appropriate classes to build the models and data loaders.`
 
 ## 0.1 Where would you define a new model?
 
-`YOUR ANSWER HERE`
+`New models and their hyperparameters are defined in the config.py files.`
 
 ## 0.2 How would you add support for a new dataset? What files would you need to change?
 
-`YOUR ANSWER HERE`
+`To add support for the new dataset we would need to change the config.py to ensure that we are changing any hyperparameters for the model.`
 
 ## 0.3 Where is the actual training code?
 
-`YOUR ANSWER HERE`
+`The actual training code is located in main.py file.`
 
 ## 0.4 Create a diagram explaining the structure of `main.py` and the entire code repo.
 
 Be sure to include the 4 main functions in it (`main`, `train_one_epoch`, `validate`, `evaluate`) and how they interact with each other. Also explain where the other files are used. No need to dive too deep into any part of the code for now, the following parts will do deeper dives into each part of the code. For now, read the code just enough to understand how the pieces come together, not necessarily the specifics. You can use any tool to create the diagram (e.g. just explain it in nice markdown, draw it on paper and take a picture, use draw.io, excalidraw, etc.)
 
-`YOUR ANSWER HERE`
-
+![main.py structure](/home/tlondhe/sp23-nmep-hw1/main.png)
 
 
 # Part 1: Datasets
@@ -139,17 +138,15 @@ The following questions relate to `models/build.py` and `models/models.py`.
 
 ## What models are implemented for you?
 
-`YOUR ANSWER HERE`
+`LeNet and ResNet18 are implemented in the models/build.py`
 
 ## What do PyTorch models inherit from? What functions do we need to implement for a PyTorch Model? (hint there are 2)
 
-`YOUR ANSWER HERE`
+`PyTorch models inherit from nn.Module, so we need to implement the __init__ and forward functions. The forward function will define the forward pass of the function, i.e. how the model will pass data input through the layers and outputs prediction.`
 
 ## How many layers does our implementation of LeNet have? How many parameters does it have? (hint: to count the number of parameters, you might want to run the code)
 
-`YOUR ANSWER HERE`
-
-
+`LeNet has 7 layers of 2 Conv2d, 2 AvgPool2d, and 3 Linear layers. An instance of the LeNet model has 99276 parameters.`
 
 # Part 3: Training
 
@@ -157,16 +154,17 @@ The following questions relate to `main.py`, and the configs in `configs/`.
 
 ## 3.0 What configs have we provided for you? What models and datasets do they train on?
 
-`YOUR ANSWER HERE`
+`We are provided the LeNet_base, ResNet18_base and ResNet18_medium_imagenet configs. They are training on cifar10 and the custom medium_imagenet datasets.`
 
 ## 3.1 Open `main.py` and go through `main()`. In bullet points, explain what the function does.
 
-`YOUR ANSWER HERE`
+* `Builds the model using hyperparameters specified in the config file.`
+* ``
 
 ## 3.2 Go through `validate()` and `evaluate()`. What do they do? How are they different? 
 > Could we have done better by reusing code? Yes. Yes we could have but we didn't... sorry...
 
-`YOUR ANSWER HERE`
+* `YOUR ANSWER HERE`
 
 
 # Part 4: AlexNet
@@ -197,7 +195,7 @@ Linear with num_classes output units
 ## 4.1 How many parameters does AlexNet have? How does it compare to LeNet? With the same batch size, how much memory do LeNet and AlexNet take up while training? 
 > (hint: use `gpuststat`)
 
-`YOUR ANSWER HERE`
+`AlexNet has 57.823 million parameters. LeNet had 99276 parameters, so AlexNet has significantly more parameters than LeNet. Therefore with the same batch size, AlexNet will take up more memory during training.`
 
 ## 4.2 Train AlexNet on CIFAR10. What accuracy do you get?
 
@@ -206,7 +204,32 @@ Report training and validation accuracy on AlexNet and LeNet. Report hyperparame
 > You can just copy the config file, don't need to write it all out again.
 > Also no need to tune the models much, you'll do it in the next part.
 
-`YOUR ANSWER HERE`
+`After training AlexNet on 50,000 CIFAR10 images, we got an accuracy of 76.75%. We trained the AlexNet for 15 epochs.`
+
+- `DATA:`
+    - `BATCH_SIZE: 256`
+    - `DATASET: "cifar10"`
+    - `IMG_SIZE: 70`
+    - `NUM_WORKERS: 32`
+    - `PIN_MEMORY: True`
+- `MODEL:`
+    - `NAME: alexnet`
+    - `NUM_CLASSES: 200`
+    - `DROP_RATE: 0.0`
+- `TRAIN:`
+    - `EPOCHS: 15 `
+    - `WARMUP_EPOCHS: 10`
+    - `LR: 3e-4`
+    - `MIN_LR: 3e-5`
+    - `WARMUP_LR: 3e-5`
+    - `LR_SCHEDULER:`
+    - `NAME: "cosine"`
+- `OPTIMIZER:`
+    - `NAME: "adamw"`
+    - `EPS: 1e-8`
+    - `BETAS: (0.9, 0.999)`
+    - `MOMENTUM: 0.9`
+
 
 
 
@@ -285,3 +308,6 @@ We don't expect anything fancy here. Just a brief summary of what you did, what 
 **REQUIREMENT**: Everyone in your group must be able to explain what you did! Even if one person carries (I know, it happens) everyone must still be able to explain what's going on!
 
 Now go play with the models and have some competitive fun! 🎉
+
+
+
