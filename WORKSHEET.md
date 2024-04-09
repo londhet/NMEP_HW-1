@@ -24,19 +24,19 @@ $ git push -u origin main
 
 # Part -1: PyTorch review
 
-Feel free to ask your NMEP friends if you don't know!
+Module has modules for building a model and functional has functions that can be used on Tensors.
 
 ## -1.0 What is the difference between `torch.nn.Module` and `torch.nn.functional`?
 
-`YOUR ANSWER HERE`
+The Dataset contains the data and the DataLoader wraps the Dataset and is used to iterate of the Dataset in batches while training.
 
 ## -1.1 What is the difference between a Dataset and a DataLoader?
 
-`YOUR ANSWER HERE`
+The Dataset contains the data and the DataLoader wraps the Dataset and is used to iterate of the Dataset in batches while training.
 
 ## -1.2 What does `@torch.no_grad()` above a function header do?
 
-`YOUR ANSWER HERE`
+It prevents a model from backpropagating.
 
 
 
@@ -64,7 +64,8 @@ Read through `README.md` and follow the steps to understand how the repo is stru
 
 Be sure to include the 4 main functions in it (`main`, `train_one_epoch`, `validate`, `evaluate`) and how they interact with each other. Also explain where the other files are used. No need to dive too deep into any part of the code for now, the following parts will do deeper dives into each part of the code. For now, read the code just enough to understand how the pieces come together, not necessarily the specifics. You can use any tool to create the diagram (e.g. just explain it in nice markdown, draw it on paper and take a picture, use draw.io, excalidraw, etc.)
 
-![main.py structure](/home/tlondhe/sp23-nmep-hw1/main.png)
+![image](https://github.com/londhet/NMEP_HW-1/assets/123130718/6df18740-202d-48ee-a1fe-b3c906efc40d)
+
 
 
 # Part 1: Datasets
@@ -75,53 +76,53 @@ The following questions relate to `data/build.py` and `data/datasets.py`.
 
 ### 1.0.0 What does `build_loader` do?
 
-`YOUR ANSWER HERE`
+It creates datasets and dataloaders from the data with the desired batch size, etc. and splits the data into train test val.
 
 ### 1.0.1 What functions do you need to implement for a PyTorch Datset? (hint there are 3)
 
-`YOUR ANSWER HERE`
+init, getitem, and len
 
 ## 1.1 CIFAR10Dataset
 
 ### 1.1.0 Go through the constructor. What field actually contains the data? Do we need to download it ahead of time?
 
-`YOUR ANSWER HERE`
+self.dataset
 
 ### 1.1.1 What is `self.train`? What is `self.transform`?
 
-`YOUR ANSWER HERE`
+self.train says whether or not this is part of the training set and whether we want to transform the data. self.transform is a function that converts the data to tensor and does transformations which differ based on whether it is training data or not.
 
 ### 1.1.2 What does `__getitem__` do? What is `index`?
 
-`YOUR ANSWER HERE`
+getitem is a method for getting an item from a specified index in the dataset, useful when iterating over the data when training.
 
 ### 1.1.3 What does `__len__` do?
 
-`YOUR ANSWER HERE`
+returns the length of the dataset.
 
 ### 1.1.4 What does `self._get_transforms` do? Why is there an if statement?
 
-`YOUR ANSWER HERE`
+self. get transforms is used to convert the data to tensor and normalize and resize it. There is an if statement so that training data can be augmented.
 
 ### 1.1.5 What does `transforms.Normalize` do? What do the parameters mean? (hint: take a look here: https://pytorch.org/vision/main/generated/torchvision.transforms.Normalize.html)
 
-`YOUR ANSWER HERE`
+The first parameter is a tuple of means and the second is a tuple of standard deviations that each row of the data will be normalized to.
 
 ## 1.2 MediumImagenetHDF5Dataset
 
 ### 1.2.0 Go through the constructor. What field actually contains the data? Where is the data actually stored on honeydew? What other files are stored in that folder on honeydew? How large are they?
 
-`YOUR ANSWER HERE`
+self.file, the data is stored in the data folder on honeydew. Other data is stored in that folder, some of them are pretty large like 100s of GB.
 
 > *Some background*: HDF5 is a file format that stores data in a hierarchical structure. It is similar to a python dictionary. The files are binary and are generally really efficient to use. Additionally, `h5py.File()` does not actually read the entire file contents into memory. Instead, it only reads the data when you access it (as in `__getitem__`). You can learn more about [hdf5 here](https://portal.hdfgroup.org/display/HDF5/HDF5) and [h5py here](https://www.h5py.org/).
 
 ### 1.2.1 How is `_get_transforms` different from the one in CIFAR10Dataset?
 
-`YOUR ANSWER HERE`
+get_transforms here has different transformation parameters and an additional self.augment field that decides whether or not to perform additional transformations on the training data.
 
 ### 1.2.2 How is `__getitem__` different from the one in CIFAR10Dataset? How many data splits do we have now? Is it different from CIFAR10? Do we have labels/annotations for the test set?
 
-`YOUR ANSWER HERE`
+getitem here returns a label of -1 if self.split == "test".
 
 ### 1.2.3 Visualizing the dataset
 
