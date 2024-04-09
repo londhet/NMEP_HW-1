@@ -5,6 +5,7 @@ import os
 import shutil
 import time
 
+import wandb
 import numpy as np
 import torch
 import torch.nn as nn
@@ -52,6 +53,8 @@ def main(config):
         config
     )
 
+    
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model = build_model(config)
     # logger.info(str(model))
@@ -74,6 +77,18 @@ def main(config):
     optimizer = build_optimizer(config, model)
     criterion = torch.nn.CrossEntropyLoss()
     lr_scheduler = CosineAnnealingLR(optimizer, config.TRAIN.EPOCHS)
+
+    # initialize wandb tracking
+    wandb.login()
+    run = wandb.init(
+        # Set the project where this run will be logged
+        project="test-run-1",
+        # Track hyperparameters and run metadata
+        config={
+            "learning_rate": config.TRAIN.LR,
+            "epochs": config.TRAIN.EPOCHS,
+        },
+)
 
     max_accuracy = 0.0
 
@@ -103,9 +118,13 @@ def main(config):
         logger.info(f"Max accuracy: {max_accuracy:.2f}%\n")
         lr_scheduler.step()
 
+
         log_stats = {"epoch": epoch, "n_params": n_parameters, "n_flops": n_flops,
                      "train_acc": train_acc1, "train_loss": train_loss, 
                      "val_acc": val_acc1, "val_loss": val_loss}
+
+        wandb.log(log_stats)
+        
         with open(
                 os.path.join(config.OUTPUT, "metrics.json"), mode="a", encoding="utf-8"
             ) as f:
@@ -212,6 +231,8 @@ def evaluate(config, data_loader, model):
         preds.append(output.cpu().numpy())
     preds = np.concatenate(preds)
     return preds
+
+
 
 
 if __name__ == "__main__":

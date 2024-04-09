@@ -1,0 +1,1 @@
+{"epoch": 14, "n_params": 57823240, "n_flops": 95588608, "train_acc": 86.43, "train_loss": 0.3999174545001984, "val_acc": 77.04, "val_loss": 0.7197761781692504, "_timestamp": 1712639029.1225727, "_runtime": 564.1880307197571, "_step": 14, "_wandb": {"runtime": 569}}
