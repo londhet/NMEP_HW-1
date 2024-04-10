@@ -1,0 +1,672 @@
+2024-04-10 18:57:11,334 INFO    StreamThr :4100285 [internal.py:wandb_internal():86] W&B internal server running at pid: 4100285, started at: 2024-04-10 18:57:11.333511
+2024-04-10 18:57:11,335 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status
+2024-04-10 18:57:11,337 INFO    WriterThread:4100285 [datastore.py:open_for_write():87] open: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/run-7toksggq.wandb
+2024-04-10 18:57:11,338 DEBUG   SenderThread:4100285 [sender.py:send():379] send: header
+2024-04-10 18:57:11,339 DEBUG   SenderThread:4100285 [sender.py:send():379] send: run
+2024-04-10 18:57:11,595 INFO    SenderThread:4100285 [dir_watcher.py:__init__():211] watching files in: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files
+2024-04-10 18:57:11,595 INFO    SenderThread:4100285 [sender.py:_start_run_threads():1124] run started: 7toksggq with start time 1712775431.333183
+2024-04-10 18:57:11,603 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: check_version
+2024-04-10 18:57:11,603 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: check_version
+2024-04-10 18:57:11,701 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: run_start
+2024-04-10 18:57:11,745 DEBUG   HandlerThread:4100285 [system_info.py:__init__():26] System info init
+2024-04-10 18:57:11,745 DEBUG   HandlerThread:4100285 [system_info.py:__init__():41] System info init done
+2024-04-10 18:57:11,746 INFO    HandlerThread:4100285 [system_monitor.py:start():194] Starting system monitor
+2024-04-10 18:57:11,746 INFO    SystemMonitor:4100285 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-04-10 18:57:11,746 INFO    HandlerThread:4100285 [system_monitor.py:probe():214] Collecting system info
+2024-04-10 18:57:11,747 INFO    SystemMonitor:4100285 [interfaces.py:start():190] Started cpu monitoring
+2024-04-10 18:57:11,748 INFO    SystemMonitor:4100285 [interfaces.py:start():190] Started disk monitoring
+2024-04-10 18:57:11,749 INFO    SystemMonitor:4100285 [interfaces.py:start():190] Started gpu monitoring
+2024-04-10 18:57:11,750 INFO    SystemMonitor:4100285 [interfaces.py:start():190] Started memory monitoring
+2024-04-10 18:57:11,751 INFO    SystemMonitor:4100285 [interfaces.py:start():190] Started network monitoring
+2024-04-10 18:57:11,798 DEBUG   HandlerThread:4100285 [system_info.py:probe():150] Probing system
+2024-04-10 18:57:11,801 DEBUG   HandlerThread:4100285 [system_info.py:_probe_git():135] Probing git
+2024-04-10 18:57:11,811 DEBUG   HandlerThread:4100285 [system_info.py:_probe_git():143] Probing git done
+2024-04-10 18:57:11,811 DEBUG   HandlerThread:4100285 [system_info.py:probe():198] Probing system done
+2024-04-10 18:57:11,811 DEBUG   HandlerThread:4100285 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-171-generic-x86_64-with-glibc2.31', 'python': '3.10.14', 'heartbeatAt': '2024-04-10T18:57:11.798975', 'startedAt': '2024-04-10T18:57:11.330008', 'docker': None, 'cuda': None, 'args': ('--cfg', 'configs/alexnet_base.yaml'), 'state': 'running', 'program': '/home/szchen/nmep-hw2/NMEP_HW-1/main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'git@github.com:londhet/NMEP_HW-1.git', 'commit': '4dc9e1e473448a9af47d202fda1ac9f94e1f02a5'}, 'email': 'stephen.z.chen@berkeley.edu', 'root': '/home/szchen/nmep-hw2/NMEP_HW-1', 'host': 'honeydew', 'username': 'szchen', 'executable': '/home/szchen/miniconda3/envs/vision-zoo/bin/python3', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1438.387515625, 'min': 1000.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 1000.05, 'min': 1000.0, 'max': 3900.0}, {'current': 1224.784, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.502, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.776, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.895, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.691, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.33, 'min': 1000.0, 'max': 3900.0}, {'current': 1001.102, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.62, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.76, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.555, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.5, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.337, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.657, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.212, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.749, 'min': 1000.0, 'max': 3900.0}, {'current': 1287.417, 'min': 1000.0, 'max': 3900.0}, {'current': 1650.442, 'min': 1000.0, 'max': 3900.0}, {'current': 2294.35, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.433, 'min': 1000.0, 'max': 3900.0}, {'current': 2301.828, 'min': 1000.0, 'max': 3900.0}, {'current': 1424.299, 'min': 1000.0, 'max': 3900.0}, {'current': 2300.397, 'min': 1000.0, 'max': 3900.0}, {'current': 2300.73, 'min': 1000.0, 'max': 3900.0}, {'current': 2167.956, 'min': 1000.0, 'max': 3900.0}, {'current': 1192.781, 'min': 1000.0, 'max': 3900.0}, {'current': 1463.706, 'min': 1000.0, 'max': 3900.0}, {'current': 1184.162, 'min': 1000.0, 'max': 3900.0}, {'current': 1451.693, 'min': 1000.0, 'max': 3900.0}, {'current': 1374.571, 'min': 1000.0, 'max': 3900.0}, {'current': 1363.466, 'min': 1000.0, 'max': 3900.0}, {'current': 1564.332, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.721, 'min': 1000.0, 'max': 3900.0}, {'current': 1220.695, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.317, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.584, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.218, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.576, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.847, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.433, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.707, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.921, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.444, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.641, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.166, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.847, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.838, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.731, 'min': 1000.0, 'max': 3900.0}, {'current': 1262.546, 'min': 1000.0, 'max': 3900.0}, {'current': 1704.201, 'min': 1000.0, 'max': 3900.0}, {'current': 2300.393, 'min': 1000.0, 'max': 3900.0}, {'current': 1000.445, 'min': 1000.0, 'max': 3900.0}, {'current': 2300.663, 'min': 1000.0, 'max': 3900.0}, {'current': 1551.045, 'min': 1000.0, 'max': 3900.0}, {'current': 2301.007, 'min': 1000.0, 'max': 3900.0}, {'current': 2300.473, 'min': 1000.0, 'max': 3900.0}, {'current': 1959.21, 'min': 1000.0, 'max': 3900.0}, {'current': 1160.306, 'min': 1000.0, 'max': 3900.0}, {'current': 1347.392, 'min': 1000.0, 'max': 3900.0}, {'current': 1115.497, 'min': 1000.0, 'max': 3900.0}, {'current': 1413.448, 'min': 1000.0, 'max': 3900.0}, {'current': 1448.326, 'min': 1000.0, 'max': 3900.0}, {'current': 1384.461, 'min': 1000.0, 'max': 3900.0}, {'current': 1349.754, 'min': 1000.0, 'max': 3900.0}], 'disk': {'/': {'total': 97.87200164794922, 'used': 28.71689224243164}}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}, {'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 503.53762435913086}}
+2024-04-10 18:57:11,811 INFO    HandlerThread:4100285 [system_monitor.py:probe():224] Finished collecting system info
+2024-04-10 18:57:11,811 INFO    HandlerThread:4100285 [system_monitor.py:probe():227] Publishing system info
+2024-04-10 18:57:11,811 DEBUG   HandlerThread:4100285 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-04-10 18:57:12,599 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_created():271] file/dir created: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/conda-environment.yaml
+2024-04-10 18:57:12,628 DEBUG   HandlerThread:4100285 [system_info.py:_save_conda():222] Saving conda packages done
+2024-04-10 18:57:12,630 INFO    HandlerThread:4100285 [system_monitor.py:probe():229] Finished publishing system info
+2024-04-10 18:57:12,635 DEBUG   SenderThread:4100285 [sender.py:send():379] send: files
+2024-04-10 18:57:12,635 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-04-10 18:57:12,708 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: python_packages
+2024-04-10 18:57:12,709 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: python_packages
+2024-04-10 18:57:12,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:57:12,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:57:12,712 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:57:12,883 DEBUG   SenderThread:4100285 [sender.py:send():379] send: telemetry
+2024-04-10 18:57:13,034 INFO    wandb-upload_0:4100285 [upload_job.py:push():131] Uploaded file /tmp/tmpu7oy8wpfwandb/b81jq1bo-wandb-metadata.json
+2024-04-10 18:57:13,597 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_created():271] file/dir created: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:13,597 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_created():271] file/dir created: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/requirements.txt
+2024-04-10 18:57:13,598 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_created():271] file/dir created: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-metadata.json
+2024-04-10 18:57:15,598 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:16,886 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:21,887 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:25,603 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:27,604 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:27,710 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:57:27,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:57:27,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:27,711 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:57:29,605 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:31,606 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:33,607 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:33,649 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:35,608 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:39,442 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:39,610 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:41,611 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:42,710 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:57:42,710 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:57:42,711 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:57:43,613 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:44,523 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:45,617 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/config.yaml
+2024-04-10 18:57:47,618 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:50,293 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:53,620 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:55,351 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:57:55,352 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 18:57:55,355 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 18:57:55,355 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 18:57:55,358 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 18:57:55,621 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_created():271] file/dir created: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 18:57:57,622 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:57:57,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:57:57,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:57:57,714 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:58:00,900 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:03,624 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:05,625 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:06,474 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:09,626 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:11,577 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:11,751 DEBUG   SystemMonitor:4100285 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-04-10 18:58:11,763 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 18:58:12,710 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:58:12,711 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:58:12,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:58:13,628 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:16,595 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:17,630 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:19,631 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:21,631 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:22,147 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:23,632 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:25,633 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:27,633 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:27,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:58:27,712 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:58:27,715 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:58:27,890 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:31,639 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 18:58:31,641 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 18:58:31,641 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 18:58:31,644 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 18:58:32,635 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 18:58:33,636 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:33,645 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:38,966 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:41,641 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:41,759 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 18:58:42,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:58:42,712 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:58:42,712 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:58:43,971 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:45,642 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:49,644 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:49,742 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:51,644 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:55,478 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:58:55,646 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:58:57,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:58:57,711 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:58:57,714 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:58:59,647 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:00,545 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:01,648 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:03,649 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:06,141 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:08,009 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 18:59:08,010 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 18:59:08,011 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 18:59:08,016 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 18:59:08,651 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 18:59:09,652 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:11,763 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 18:59:11,765 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:12,712 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:59:12,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:59:12,715 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:59:17,231 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:17,655 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:21,656 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:22,490 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:25,658 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:27,659 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:27,711 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:59:27,712 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:59:27,715 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:59:27,818 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:29,659 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:31,660 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:33,324 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:33,661 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:35,662 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:38,734 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:39,663 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:41,664 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:41,773 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 18:59:42,712 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:59:42,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:59:42,715 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:59:43,839 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:44,714 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 18:59:44,715 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 18:59:44,715 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 18:59:44,716 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 18:59:45,665 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 18:59:45,666 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:47,666 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:49,717 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:53,668 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:55,095 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 18:59:55,669 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:57,670 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 18:59:57,712 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 18:59:57,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 18:59:57,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 18:59:59,671 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:00,927 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:03,672 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:06,009 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:07,674 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:11,676 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:11,749 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:11,771 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:00:12,712 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:00:12,712 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:00:12,716 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:00:15,678 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:17,444 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:17,679 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:21,386 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:00:21,388 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:00:21,388 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:00:21,389 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:00:21,680 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:00:23,390 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:23,681 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:27,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:00:27,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:00:27,714 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:00:28,889 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:29,684 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:31,684 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:33,924 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:35,686 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:37,687 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:39,487 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:39,688 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:41,775 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:00:42,712 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:00:42,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:00:42,716 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:00:43,689 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:45,023 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:47,691 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:49,691 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:50,188 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:51,692 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:53,693 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:00:55,934 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:00:57,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:00:57,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:00:57,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:00:59,695 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:00,839 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:01:00,840 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:01:00,841 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:01:00,844 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:01:01,696 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:01:01,697 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:01,845 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:03,697 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:06,845 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:09,699 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:11,700 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:11,779 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:01:12,717 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:01:12,718 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:01:12,718 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:01:12,848 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:13,701 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:15,702 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:17,860 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:19,703 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:23,380 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:23,705 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:27,706 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:27,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:01:27,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:01:27,716 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:01:28,882 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:31,708 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:33,709 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:34,442 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:37,396 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:01:37,397 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:01:37,398 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:01:37,398 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:01:37,710 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:01:39,711 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:40,400 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:41,783 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:01:42,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:01:42,714 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:01:42,717 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:01:45,417 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:45,713 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:47,714 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:49,715 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:50,900 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:53,717 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:55,984 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:01:57,713 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:01:57,713 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:01:57,716 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:01:57,718 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:01:59,719 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:01,089 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:01,720 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:03,720 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:05,721 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:07,040 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:07,722 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:09,723 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:11,724 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:11,786 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:02:12,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:02:12,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:02:12,733 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:02:12,834 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:13,724 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:17,027 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:02:17,030 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:02:17,030 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:02:17,031 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:02:17,726 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:02:17,726 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:18,031 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:19,727 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:23,032 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:25,729 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:27,729 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:02:27,729 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:02:27,730 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:02:28,907 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:29,734 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:31,735 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:33,736 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:33,991 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:35,737 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:39,436 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:39,738 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:41,790 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:02:42,728 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:02:42,729 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:02:42,729 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:02:43,740 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:44,902 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:47,741 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:49,742 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:50,789 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:53,571 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:02:53,572 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:02:53,573 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:02:53,573 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:02:53,743 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:02:55,744 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:02:56,575 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:02:57,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:02:57,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:02:57,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:03:01,626 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:01,747 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:03,747 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:05,748 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:07,001 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:07,749 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:11,750 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:11,793 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:03:12,729 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:12,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:03:12,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:03:12,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:03:15,752 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:17,872 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:19,754 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:21,754 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:22,928 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:23,755 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:25,756 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:27,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:03:27,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:03:27,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:03:28,888 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:30,087 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:03:30,090 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:03:30,090 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:03:30,091 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:03:30,758 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:03:31,759 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:34,092 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:37,761 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:39,389 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:39,761 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:41,796 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:03:42,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:03:42,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:03:42,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:03:43,763 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:44,819 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:47,764 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:50,095 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:51,766 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:55,112 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:03:55,767 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:03:57,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:03:57,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:03:57,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:03:59,769 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:00,467 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:01,770 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:05,471 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:07,772 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:09,249 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:04:09,250 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:04:09,251 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:04:09,252 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:04:09,773 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:04:09,773 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:11,253 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:11,773 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:11,799 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:04:12,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:04:12,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:04:12,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:04:15,775 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:16,581 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:17,776 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:19,776 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:21,673 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:23,778 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:25,778 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:27,396 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:27,730 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:04:27,730 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:04:27,734 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:04:27,779 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:31,781 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:32,589 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:35,782 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:37,783 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:38,149 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:39,784 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:41,785 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:41,802 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:04:42,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:04:42,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:04:42,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:04:43,880 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:45,775 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:04:45,777 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:04:45,778 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:04:45,778 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:04:45,786 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:04:47,787 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:49,780 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:53,789 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:55,130 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:04:55,790 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:04:57,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:04:57,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:04:57,731 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:04:59,791 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:00,449 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:03,793 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:05,566 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:07,794 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:10,650 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:11,796 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:11,805 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:05:12,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:05:12,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:05:12,732 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:05:15,797 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:16,245 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:17,798 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:21,247 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:22,049 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:05:22,050 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:05:22,051 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:05:22,051 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:05:22,800 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:05:23,801 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:27,053 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:27,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:05:27,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:05:27,733 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:05:32,543 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:32,805 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:36,806 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:37,697 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:40,808 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:41,808 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:05:42,731 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:42,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:05:42,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:05:42,732 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:05:44,812 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:46,813 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:47,824 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:48,814 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:50,815 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:52,816 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:53,692 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:53,816 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:54,816 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:05:57,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:05:57,732 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:05:57,735 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:05:58,520 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:05:58,521 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:05:58,521 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:05:58,522 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:05:58,818 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:05:59,523 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:05:59,818 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:00,819 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:04,524 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:08,821 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:10,446 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:11,812 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:06:12,732 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:06:12,733 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:06:12,775 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:06:12,822 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:15,502 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:16,823 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:18,823 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:20,824 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:21,257 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:22,824 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:26,382 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:26,825 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:27,734 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:06:27,734 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:06:27,735 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:06:28,826 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:29,827 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:30,827 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:32,166 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:35,829 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:37,917 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:37,918 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: partial_history
+2024-04-10 19:06:37,920 DEBUG   SenderThread:4100285 [sender.py:send():379] send: history
+2024-04-10 19:06:37,920 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: summary_record
+2024-04-10 19:06:37,921 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:06:38,830 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:06:39,830 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:40,831 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:41,822 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:06:42,733 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: stop_status
+2024-04-10 19:06:42,734 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: stop_status
+2024-04-10 19:06:42,737 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:06:42,941 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:43,927 DEBUG   SenderThread:4100285 [sender.py:send():379] send: exit
+2024-04-10 19:06:43,927 INFO    SenderThread:4100285 [sender.py:send_exit():586] handling exit code: 0
+2024-04-10 19:06:43,928 INFO    SenderThread:4100285 [sender.py:send_exit():588] handling runtime: 572
+2024-04-10 19:06:43,928 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:06:43,929 INFO    SenderThread:4100285 [sender.py:send_exit():594] send defer
+2024-04-10 19:06:43,929 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:43,929 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 0
+2024-04-10 19:06:43,930 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:43,930 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-04-10 19:06:43,930 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 1
+2024-04-10 19:06:43,930 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:43,931 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 1
+2024-04-10 19:06:43,931 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:43,931 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-04-10 19:06:43,931 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 2
+2024-04-10 19:06:43,931 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:43,931 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 2
+2024-04-10 19:06:43,931 INFO    HandlerThread:4100285 [system_monitor.py:finish():203] Stopping system monitor
+2024-04-10 19:06:43,932 DEBUG   SystemMonitor:4100285 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-04-10 19:06:43,932 INFO    HandlerThread:4100285 [interfaces.py:finish():202] Joined cpu monitor
+2024-04-10 19:06:43,933 DEBUG   SystemMonitor:4100285 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-04-10 19:06:43,933 INFO    HandlerThread:4100285 [interfaces.py:finish():202] Joined disk monitor
+2024-04-10 19:06:44,680 INFO    HandlerThread:4100285 [interfaces.py:finish():202] Joined gpu monitor
+2024-04-10 19:06:44,680 INFO    HandlerThread:4100285 [interfaces.py:finish():202] Joined memory monitor
+2024-04-10 19:06:44,680 INFO    HandlerThread:4100285 [interfaces.py:finish():202] Joined network monitor
+2024-04-10 19:06:44,681 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:44,682 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-04-10 19:06:44,682 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 3
+2024-04-10 19:06:44,682 DEBUG   SenderThread:4100285 [sender.py:send():379] send: stats
+2024-04-10 19:06:44,682 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:44,683 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 3
+2024-04-10 19:06:44,683 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:44,683 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-04-10 19:06:44,683 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 4
+2024-04-10 19:06:44,684 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:44,684 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 4
+2024-04-10 19:06:44,684 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:44,684 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-04-10 19:06:44,684 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 5
+2024-04-10 19:06:44,684 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:44,684 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 5
+2024-04-10 19:06:44,685 DEBUG   SenderThread:4100285 [sender.py:send():379] send: summary
+2024-04-10 19:06:44,685 INFO    SenderThread:4100285 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-04-10 19:06:44,686 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:44,686 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-04-10 19:06:44,686 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 6
+2024-04-10 19:06:44,686 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:44,686 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 6
+2024-04-10 19:06:44,687 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:44,687 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-04-10 19:06:44,687 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 7
+2024-04-10 19:06:44,687 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: status_report
+2024-04-10 19:06:44,687 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:44,687 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 7
+2024-04-10 19:06:44,688 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:44,688 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-04-10 19:06:44,832 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:06:44,833 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:44,927 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 19:06:46,168 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 8
+2024-04-10 19:06:46,169 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 19:06:46,169 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:46,169 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 8
+2024-04-10 19:06:46,170 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:46,170 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-04-10 19:06:46,170 INFO    SenderThread:4100285 [job_builder.py:build():318] Attempting to build job artifact
+2024-04-10 19:06:46,171 INFO    SenderThread:4100285 [job_builder.py:_get_source_type():455] is repo sourced job
+2024-04-10 19:06:46,196 INFO    SenderThread:4100285 [job_builder.py:build():431] adding wandb-job metadata file
+2024-04-10 19:06:46,203 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 9
+2024-04-10 19:06:46,203 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:46,203 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 9
+2024-04-10 19:06:46,204 DEBUG   SenderThread:4100285 [sender.py:send():379] send: artifact
+2024-04-10 19:06:46,833 INFO    Thread-12 :4100285 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:46,928 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 19:06:47,053 INFO    wandb-upload_0:4100285 [upload_job.py:push():89] Uploaded file /home/szchen/.local/share/wandb/artifacts/staging/tmppockld85
+2024-04-10 19:06:47,066 INFO    wandb-upload_1:4100285 [upload_job.py:push():89] Uploaded file /tmp/tmpmpxybmrf/wandb-job.json
+2024-04-10 19:06:47,907 INFO    SenderThread:4100285 [sender.py:send_artifact():1468] sent artifact job-git_github.com_londhet_NMEP_HW-1.git_main.py - {'id': 'QXJ0aWZhY3Q6NzkyMTI5MDU4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE2MTM2NTYwNg==', 'latestArtifact': None}}
+2024-04-10 19:06:47,907 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:47,908 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-04-10 19:06:47,908 INFO    SenderThread:4100285 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-04-10 19:06:48,834 INFO    SenderThread:4100285 [dir_watcher.py:finish():388] scan: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files
+2024-04-10 19:06:48,835 INFO    SenderThread:4100285 [dir_watcher.py:finish():402] scan save: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/conda-environment.yaml conda-environment.yaml
+2024-04-10 19:06:48,835 INFO    SenderThread:4100285 [dir_watcher.py:finish():402] scan save: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/requirements.txt requirements.txt
+2024-04-10 19:06:48,836 INFO    SenderThread:4100285 [dir_watcher.py:finish():402] scan save: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/config.yaml config.yaml
+2024-04-10 19:06:48,840 INFO    SenderThread:4100285 [dir_watcher.py:finish():402] scan save: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log output.log
+2024-04-10 19:06:48,844 INFO    SenderThread:4100285 [dir_watcher.py:finish():402] scan save: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-metadata.json wandb-metadata.json
+2024-04-10 19:06:48,844 INFO    SenderThread:4100285 [dir_watcher.py:finish():402] scan save: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json wandb-summary.json
+2024-04-10 19:06:48,845 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 10
+2024-04-10 19:06:48,847 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 19:06:48,848 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:48,852 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 10
+2024-04-10 19:06:48,853 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:48,853 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-04-10 19:06:48,853 INFO    SenderThread:4100285 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-10 19:06:48,929 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 19:06:48,930 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 19:06:49,123 INFO    wandb-upload_0:4100285 [upload_job.py:push():131] Uploaded file /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/conda-environment.yaml
+2024-04-10 19:06:49,126 INFO    wandb-upload_1:4100285 [upload_job.py:push():131] Uploaded file /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/requirements.txt
+2024-04-10 19:06:49,179 INFO    wandb-upload_2:4100285 [upload_job.py:push():131] Uploaded file /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/config.yaml
+2024-04-10 19:06:49,185 INFO    wandb-upload_4:4100285 [upload_job.py:push():131] Uploaded file /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/wandb-summary.json
+2024-04-10 19:06:49,191 INFO    wandb-upload_3:4100285 [upload_job.py:push():131] Uploaded file /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/files/output.log
+2024-04-10 19:06:49,391 INFO    Thread-11 (_thread_body):4100285 [sender.py:transition_state():614] send defer: 11
+2024-04-10 19:06:49,392 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:49,392 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 11
+2024-04-10 19:06:49,393 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:49,393 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-04-10 19:06:49,393 INFO    SenderThread:4100285 [file_pusher.py:join():178] waiting for file pusher
+2024-04-10 19:06:49,394 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 12
+2024-04-10 19:06:49,394 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:49,394 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 12
+2024-04-10 19:06:49,394 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:49,394 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-04-10 19:06:49,395 INFO    SenderThread:4100285 [file_stream.py:finish():614] file stream finish called
+2024-04-10 19:06:49,679 INFO    SenderThread:4100285 [file_stream.py:finish():618] file stream finish is done
+2024-04-10 19:06:49,680 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 13
+2024-04-10 19:06:49,680 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:49,680 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 13
+2024-04-10 19:06:49,681 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:49,681 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-04-10 19:06:49,681 INFO    SenderThread:4100285 [sender.py:transition_state():614] send defer: 14
+2024-04-10 19:06:49,682 DEBUG   SenderThread:4100285 [sender.py:send():379] send: final
+2024-04-10 19:06:49,682 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: defer
+2024-04-10 19:06:49,682 DEBUG   SenderThread:4100285 [sender.py:send():379] send: footer
+2024-04-10 19:06:49,682 INFO    HandlerThread:4100285 [handler.py:handle_request_defer():172] handle defer: 14
+2024-04-10 19:06:49,683 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: defer
+2024-04-10 19:06:49,683 INFO    SenderThread:4100285 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-04-10 19:06:49,684 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 19:06:49,684 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 19:06:49,685 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: poll_exit
+2024-04-10 19:06:49,685 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: poll_exit
+2024-04-10 19:06:49,686 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: server_info
+2024-04-10 19:06:49,686 DEBUG   SenderThread:4100285 [sender.py:send_request():406] send_request: server_info
+2024-04-10 19:06:49,690 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: get_summary
+2024-04-10 19:06:49,691 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: sampled_history
+2024-04-10 19:06:49,692 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: internal_messages
+2024-04-10 19:06:49,776 INFO    MainThread:4100285 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2024-04-10 19:06:49,777 INFO    MainThread:4100285 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2024-04-10 19:06:49,778 INFO    MainThread:4100285 [wandb_run.py:_footer_sync_info():3895] logging synced files
+2024-04-10 19:06:49,778 DEBUG   HandlerThread:4100285 [handler.py:handle_request():146] handle_request: shutdown
+2024-04-10 19:06:49,778 INFO    HandlerThread:4100285 [handler.py:finish():866] shutting down handler
+2024-04-10 19:06:50,686 INFO    WriterThread:4100285 [datastore.py:close():296] close: /home/szchen/nmep-hw2/NMEP_HW-1/wandb/run-20240410_185711-7toksggq/run-7toksggq.wandb
+2024-04-10 19:06:50,776 INFO    SenderThread:4100285 [sender.py:finish():1546] shutting down sender
+2024-04-10 19:06:50,776 INFO    SenderThread:4100285 [file_pusher.py:finish():172] shutting down file pusher
+2024-04-10 19:06:50,776 INFO    SenderThread:4100285 [file_pusher.py:join():178] waiting for file pusher

@@ -82,13 +82,19 @@ def main(config):
     wandb.login()
     run = wandb.init(
         # Set the project where this run will be logged
-        project="test-run-1",
+        project="alexnet-batch-size",
+        name="batch-131",
         # Track hyperparameters and run metadata
         config={
+            "batch_size": config.DATA.BATCH_SIZE,
             "learning_rate": config.TRAIN.LR,
             "epochs": config.TRAIN.EPOCHS,
         },
 )
+    # api = wandb.Api()
+    # run = api.run("szchen/test-run-1/<run_id>")
+    # run.config["learning_rate"] = config.TRAIN.LR
+    # run.update()
 
     max_accuracy = 0.0
 
