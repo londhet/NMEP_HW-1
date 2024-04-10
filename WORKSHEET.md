@@ -248,7 +248,11 @@ Report training and validation accuracy on AlexNet and LeNet. Report hyperparame
 
 ## 5.1 Plot the training and validation accuracy and loss curves for AlexNet and LeNet. Attach the plot and any observations you have below.
 
-`YOUR ANSWER HERE`
+![W B Chart 4_8_2024, 10_40_02 PM (1)](https://github.com/londhet/NMEP_HW-1/assets/123130718/176b1a3a-526e-496a-aa66-2f9f51128ee7)
+![W B Chart 4_9_2024, 10_45_03 PM](https://github.com/londhet/NMEP_HW-1/assets/123130718/3ad1a3f6-9964-4bf4-b348-0528e03c006c)
+![W B Chart 4_9_2024, 10_44_55 PM](https://github.com/londhet/NMEP_HW-1/assets/123130718/73ce5cb2-1896-4811-a449-ac72598d9a21)
+![W B Chart 4_8_2024, 10_39_52 PM (1)](https://github.com/londhet/NMEP_HW-1/assets/123130718/94523489-cd58-4149-a6a8-89c6a4b1c9d3)
+
 
 ## 5.2 For just AlexNet, vary the learning rate by factors of 3ish or 10 (ie if it's 3e-4 also try 1e-4, 1e-3, 3e-3, etc) and plot all the loss plots on the same graph. What do you observe? What is the best learning rate? Try at least 4 different learning rates.
 
